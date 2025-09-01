@@ -1,0 +1,135 @@
+/** style.css - Pizzeria Mamma Mia **/
+/* Schriftarten laden und Farben definieren */
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter/Inter-VariableFont_opsz\,wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter/Inter-Italic-VariableFont_opsz\,wght.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lobster";
+  src: url("fonts/Lobster/Lobster-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --bg-color: #222;
+  --text: #fff;
+  --subtext: #ddd;
+  --btn-color: #b00;
+}
+
+/* 2. Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 3. Stile definieren */
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  background-color: var(--bg-color);
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.another {
+  height: 100vh;
+}
+
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("img/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-family: "Lobster", sans-serif;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 3rem;
+  line-height: 3rem;
+  margin: 0 0 1rem 0;
+}
+
+.subtitle {
+  color: var(--subtext);
+}
+
+#btn-opening {
+  background-color: var(--btn-color);
+  color: var(--text);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+  transition: 0.3s;
+}
+
+#btn-opening:hover {
+  background-color: transparent;
+  color: var(--btn-color);
+  border-color: var(--btn-color);
+  cursor: pointer;
+}
+
+/* Gängige Responsive-Größen definieren */
+@media (min-width: 600px) {
+  .title {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .title {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+
+  .subtitle {
+    font-size: 1.6rem;
+  }
+}
