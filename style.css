@@ -58,7 +58,7 @@ body {
 
 .hero {
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("img/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -98,6 +98,22 @@ body {
   color: var(--btn-color);
   border-color: var(--btn-color);
   cursor: pointer;
+}
+
+.about-us {
+  height: 50vh;
+}
+
+.opening-time {
+  height: 50vh;
+}
+
+.contact {
+  height: 50vh;
+}
+
+footer {
+  height: 20vh;
 }
 
 /* Gängige Responsive-Größen definieren */
