@@ -7,26 +7,120 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav></nav>
-    <section class="hero">
-      <h1 class="title">
-        Pizzeria<br />
-        Mamma Mia
-      </h1>
-      <p class="subtitle">Original italienische Küche aus der Toskana</p>
-      <a id="btn-opening" href="#opening">Öffnungszeiten ansehen</a>
-    </section>
-    <section class="about-us">
-      <h2>Über uns</h2>
-    </section>
-    <section class="opening-time">
-      <h2>Öffnungszeiten</h2>
-    </section>
-    <section class="contact">
-      <h2>Kontakt</h2>
-    </section>
+    <header>
+      <nav class="nav">
+        <ul class="nav">
+          <li><a href="#about">Über&shy; uns</a></li>
+          <li><a href="#menu">Speise&shy;karte</a></li>
+          <li><a href="#opening">Öffnungs&shy;zeiten</a></li>
+        </ul>
+      </nav>
+      <section class="hero">
+        <h1 class="title">
+          Pizzeria<br />
+          Mamma Mia
+        </h1>
+        <p class="subtitle">Original italienische Küche aus der Toskana</p>
+        <a class="btn" id="btn-opening" href="#opening"
+          >Öffnungszeiten ansehen</a
+        >
+      </section>
+    </header>
+    <main>
+      <section id="about" class="about">
+        <div class="about-text-container">
+          <h2>Über uns</h2>
+          <p>
+            Willkommen bei Pizzeria Mamma Mia, wo die kulinarische Seele der
+            Toskana in jedem Bissen spürbar wird. Unsere Geschichte beginnt mit
+            der Leidenschaft für die traditionelle italienische Küche, die von
+            Generation zu Generation weitergegeben wurde. Bei uns dreht sich
+            alles um die Einfachheit und Frische der Zutaten, die direkt aus der
+            Region stammen oder sorgfältig von ausgewählten italienischen
+            Lieferanten bezogen werden. Jede Pizza, jede Pasta und jedes Gericht
+            wird mit Liebe und den Originalrezepten unserer Mamma zubereitet.
+            Wir möchten, dass Sie bei uns nicht nur essen, sondern die herzliche
+            Gastfreundschaft und das Gefühl von "La Dolce Vita" erleben.
+          </p>
+
+          <p>
+            Pizzeria Mamma Mia ist mehr als nur ein Restaurant – es ist ein
+            Stück Toskana, das wir mit Ihnen teilen möchten. Unser rustikales
+            und gemütliches Ambiente lädt dazu ein, den Alltag hinter sich zu
+            lassen und in eine Welt voller Genuss einzutauchen. Ob Sie mit der
+            Familie, Freunden oder zu zweit kommen, wir sorgen dafür, dass Ihr
+            Besuch zu einem unvergesslichen Erlebnis wird. Lassen Sie sich von
+            den authentischen Aromen verführen und entdecken Sie die wahren
+            Schätze der italienischen Kochkunst. Wir freuen uns darauf, Sie bald
+            als Gast bei uns begrüßen zu dürfen.
+          </p>
+          <a class="btn" id="btn-menu" href="#menu">Zur Speisekarte</a>
+        </div>
+        <div class="about-img-container">
+          <img
+            class="img-grid img1"
+            src="img/about-1.jpg"
+            alt="Schaufensterfoto"
+          />
+          <img class="img-grid img2" src="img/about-2.jpg" alt="Gästefoto" />
+          <img class="img-grid img3" src="img/about-3.jpg" alt="Pizzafoto" />
+        </div>
+      </section>
+      <section class="opening">
+        <div class="opening-container">
+          <h2 id="opening">Öffnungszeiten</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Tag</th>
+                <th>Uhrzeit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>MO</td>
+                <td>Ruhetag</td>
+              </tr>
+              <tr>
+                <td>DI</td>
+                <td>11:00 - 23:00</td>
+              </tr>
+              <tr>
+                <td>MI</td>
+                <td>11:00 - 23:00</td>
+              </tr>
+              <tr>
+                <td>DO</td>
+                <td>11:00 - 23:00</td>
+              </tr>
+              <tr>
+                <td>FR</td>
+                <td>11:00 - 02:00</td>
+              </tr>
+              <tr>
+                <td>SA</td>
+                <td>11:00 - 03:00</td>
+              </tr>
+              <tr>
+                <td>SO</td>
+                <td>11:00 - 23:00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="contact">
+        <h2 id="contact">Kontakt</h2>
+      </section>
+    </main>
     <footer>
-      <nav></nav>
+      <nav class="nav">
+        <ul class="nav">
+          <li><a href="#about">Über uns</a></li>
+          <li><a href="#opening-time">Öffnungszeiten</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
       <p>&copy; 2025 Frederik Anspach</p>
     </footer>
   </body>

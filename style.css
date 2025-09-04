@@ -23,10 +23,11 @@
 }
 
 :root {
-  --bg-color: #222;
+  --bg-color: #1a1a1a;
   --text: #fff;
   --subtext: #ddd;
-  --btn-color: #b00;
+  --design-color: #ff3030;
+  scroll-behavior: smooth;
 }
 
 /* 2. Reset */
@@ -45,20 +46,32 @@ a {
 body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: weight;
   font-style: normal;
   background-color: var(--bg-color);
   color: var(--text);
-  font-size: 1rem;
 }
 
-.another {
-  height: 100vh;
+.nav {
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 16px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  hyphens: manual;
+}
+
+.nav a:hover {
+  color: var(--design-color);
+  transition: 0.3s ease-in-out;
 }
 
 .hero {
-  height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  height: 92vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("img/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -68,6 +81,20 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+p {
+  color: var(--subtext);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: var(--design-color);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .title {
@@ -83,29 +110,133 @@ body {
   color: var(--subtext);
 }
 
-#btn-opening {
-  background-color: var(--btn-color);
+.btn {
+  background-color: var(--design-color);
   color: var(--text);
   border: 1px solid transparent;
   border-radius: 5px;
   padding: 1rem 2rem;
-  margin-top: 3rem;
-  transition: 0.3s;
-}
-
-#btn-opening:hover {
-  background-color: transparent;
-  color: var(--btn-color);
-  border-color: var(--btn-color);
+  transition: 0.3s ease-in-out;
   cursor: pointer;
 }
 
-.about-us {
-  height: 50vh;
+.btn:hover {
+  background-color: transparent;
+  color: var(--design-color);
+  border-color: var(--design-color);
 }
 
-.opening-time {
-  height: 50vh;
+#btn-opening {
+  margin-top: 40px;
+}
+
+.about {
+  display: grid;
+  align-items: center;
+  gap: 2rem;
+  max-width: 90%;
+  margin: auto;
+  padding: 5rem 0;
+}
+
+.about-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-img-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.about-img-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.img1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+.img2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.img3 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.img-grid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#btn-menu {
+  margin-top: 2rem;
+  align-self: flex-start;
+}
+
+.opening {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+  padding: 2rem 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./img/info.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.opening-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Redundant, aber schadet nicht */
+  width: 40vh;
+}
+
+#opening {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+/* Zentriert den Text in allen Zellen */
+th,
+td {
+  text-align: center;
+  padding: 10px;
+  width: 50%;
+}
+
+th {
+  color: var(--text);
+  border-bottom: 1px solid var(--subtext);
+}
+
+td {
+  color: var(--subtext);
+}
+
+/* Besondere Formatierung für den Ruhetag */
+tr:first-child td {
+  color: var(--design-color);
+  font-weight: bold;
 }
 
 .contact {
@@ -118,6 +249,11 @@ footer {
 
 /* Gängige Responsive-Größen definieren */
 @media (min-width: 600px) {
+  .nav {
+    gap: 40px;
+    font-size: 1rem;
+  }
+
   .title {
     font-size: 3.5rem;
     line-height: 3.5rem;
@@ -129,6 +265,10 @@ footer {
 }
 
 @media (min-width: 768px) {
+  .nav {
+    gap: 60px;
+  }
+
   .title {
     font-size: 4rem;
     line-height: 4rem;
@@ -141,11 +281,24 @@ footer {
 
 @media (min-width: 992px) {
   .title {
-    font-size: 5rem;
-    line-height: 5rem;
+    font-size: 6rem;
+    line-height: 6rem;
   }
 
   .subtitle {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+  }
+
+  .nav {
+    gap: 80px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .about {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
   }
 }
