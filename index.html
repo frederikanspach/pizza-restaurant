@@ -66,62 +66,79 @@
           <img class="img-grid img3" src="img/about-3.jpg" alt="Pizzafoto" />
         </div>
       </section>
-      <section class="opening">
+      <section id="opening" class="opening">
         <div class="opening-container">
-          <h2 id="opening">Öffnungszeiten</h2>
+          <h2>Öffnungszeiten</h2>
           <table>
             <thead>
               <tr>
-                <th>Tag</th>
-                <th>Uhrzeit</th>
+                <th class="td-left">Tag</th>
+                <th class="td-right">Uhrzeit</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>MO</td>
-                <td>Ruhetag</td>
+                <td class="td-left">MO</td>
+                <td class="td-right closed">Ruhetag</td>
               </tr>
               <tr>
-                <td>DI</td>
-                <td>11:00 - 23:00</td>
+                <td class="td-left">DI</td>
+                <td class="td-right">11:00 - 23:00</td>
               </tr>
               <tr>
-                <td>MI</td>
-                <td>11:00 - 23:00</td>
+                <td class="td-left">MI</td>
+                <td class="td-right">11:00 - 23:00</td>
               </tr>
               <tr>
-                <td>DO</td>
-                <td>11:00 - 23:00</td>
+                <td class="td-left">DO</td>
+                <td class="td-right">11:00 - 23:00</td>
               </tr>
               <tr>
-                <td>FR</td>
-                <td>11:00 - 02:00</td>
+                <td class="td-left">FR</td>
+                <td class="td-right">11:00 - 02:00</td>
               </tr>
               <tr>
-                <td>SA</td>
-                <td>11:00 - 03:00</td>
+                <td class="td-left">SA</td>
+                <td class="td-right">11:00 - 03:00</td>
               </tr>
               <tr>
-                <td>SO</td>
-                <td>11:00 - 23:00</td>
+                <td class="td-left">SO</td>
+                <td class="td-right">11:00 - 23:00</td>
               </tr>
             </tbody>
           </table>
         </div>
       </section>
-      <section class="contact">
-        <h2 id="contact">Kontakt</h2>
+      <section id="contact" class="about">
+        <div class="about-text-container">
+          <img
+            class="img-grid img2"
+            src="img/contact.jpg"
+            alt="Partyfoto aus dem Restaurant"
+          />
+        </div>
+        <div class="about-text-container">
+          <h2 id="contact">Kontakt</h2>
+          <address>
+            (0) 123 4567890<br /><br />
+            info@beispiel.de<br /><br />
+            Beispielstr. 1<br /><br />
+            1337 Beispieldorf
+          </address>
+          <a class="btn" id="btn-menu" href="#menu">Jetzt anrufen!</a>
+          <a class="btn" id="btn-menu" href="#menu">eMail schreiben</a>
+        </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer-container">
       <nav class="nav">
         <ul class="nav">
-          <li><a href="#about">Über uns</a></li>
-          <li><a href="#opening-time">Öffnungszeiten</a></li>
-          <li><a href="#contact">Kontakt</a></li>
+          <li><a href="#">Impressum</a></li>
+          <li><a href="#">Datenschutzerklärung</a></li>
+          <li><a href="#">Jobs</a></li>
         </ul>
       </nav>
-      <p>&copy; 2025 Frederik Anspach</p>
+      <p class="footer">&copy; 2025 Frederik Anspach</p>
     </footer>
   </body>
 </html>

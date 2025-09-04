@@ -189,7 +189,7 @@ h2 {
   justify-content: center;
   align-items: center;
   margin: 3rem 0;
-  padding: 2rem 0;
+  padding: 4rem 0;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(./img/info.jpg);
   background-position: center;
@@ -202,49 +202,56 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center; /* Redundant, aber schadet nicht */
+  text-align: center;
   width: 40vh;
 }
 
-#opening {
-  width: 100%;
-}
-
 table {
-  width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
 }
 
-/* Zentriert den Text in allen Zellen */
 th,
 td {
   text-align: center;
-  padding: 10px;
+  padding: 5px;
   width: 50%;
 }
 
 th {
-  color: var(--text);
   border-bottom: 1px solid var(--subtext);
+  text-transform: uppercase;
 }
 
 td {
   color: var(--subtext);
 }
 
-/* Besondere Formatierung für den Ruhetag */
-tr:first-child td {
-  color: var(--design-color);
-  font-weight: bold;
+.td-left {
+  text-align: left;
 }
 
-.contact {
-  height: 50vh;
+.td-right {
+  text-align: right;
+}
+
+.closed {
+  color: var(--design-color);
+}
+
+.footer-container {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 footer {
-  height: 20vh;
+  font-size: 0.8rem;
+  text-align: center;
+  background-color: #303030;
 }
 
 /* Gängige Responsive-Größen definieren */
@@ -277,6 +284,10 @@ footer {
   .subtitle {
     font-size: 1.4rem;
   }
+
+  table {
+    font-size: 1.2rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -300,5 +311,9 @@ footer {
   .about {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+  }
+
+  table {
+    font-size: 1.4rem;
   }
 }
