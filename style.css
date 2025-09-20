@@ -259,7 +259,7 @@ td {
   display: flex;
   flex-direction: column;
   text-align: justify;
-  align-items: center; /* Hinzugefügt: Zentriert die Kindelemente horizontal */
+  align-items: center;
 }
 
 .adress-container {
@@ -278,7 +278,7 @@ td {
 }
 
 .adress-span {
-  padding: 1rem;
+  padding: 0.5rem;
   display: block;
   text-align: left;
 }
